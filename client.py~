@@ -30,7 +30,7 @@ class UserInterface:
         return pickle.loads(self.socket.recv())
 
 
-query = None
+data = None
 user_interface = UserInterface()
 while query != 'q':
     query = raw_input('>>')

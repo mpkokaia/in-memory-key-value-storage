@@ -6,7 +6,7 @@ memory = {}
 context = zmq.Context()
 socket = context.socket(zmq.REP)
 socket.bind('tcp://127.0.0.1:9999')
-    
+
 while True:
     command, key, data = pickle.loads(socket.recv())
     if command == 'set':
